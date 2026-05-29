@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nour's 17th Birthday Invitation</title>
+    <meta
+      name="description"
+      content="A premium cinematic birthday invitation for Nour's 17th birthday."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <div class="ambient ambient-c"></div>
+    <div class="glitter-layer" id="glitter-layer"></div>
+
+    <div class="experience-gate" id="experience-gate" aria-live="polite">
+      <div class="gate-backdrop"></div>
+      <div class="candle-stage">
+        <p class="stage-brand" id="stage-brand">Private Invitation</p>
+        <div class="candle-holder">
+          <div class="candle-glow"></div>
+          <div class="smoke smoke-one"></div>
+          <div class="smoke smoke-two"></div>
+          <div class="flame-hitbox" id="flame-hitbox" aria-hidden="true"></div>
+          <div class="flame-wrap" id="flame-wrap">
+            <div class="flame-core"></div>
+            <div class="flame-outer"></div>
+          </div>
+          <div class="wick"></div>
+          <div class="candle">
+            <div class="candle-shine"></div>
+          </div>
+          <div class="opening-cake opening-cake--top"></div>
+          <div class="opening-cake opening-cake--base"></div>
+          <div class="plate"></div>
+        </div>
+        <p class="stage-instruction" id="stage-instruction">
+          Swipe to blow out the candle
+        </p>
+        <button class="ghost-button gate-button" id="gate-enter" type="button">
+          Enter Invitation
+        </button>
+      </div>
+      <div class="gesture-layer" id="gesture-layer" aria-hidden="true"></div>
+    </div>
+
+    <div class="cinematic-intro hidden" id="cinematic-intro" aria-hidden="true">
+      <div class="intro-slide active">
+        <span>NOUR STUDIOS PRESENTS</span>
+      </div>
+      <div class="intro-slide">
+        <span>THE DANCING QUEEN TURNS 17</span>
+      </div>
+      <div class="intro-slide">
+        <span>FOR ONE UNFORGETTABLE NIGHT</span>
+      </div>
+    </div>
+
+    <button
+      class="music-toggle hidden"
+      id="music-toggle"
+      type="button"
+      aria-label="Open music controls"
+    >
+      ♫
+    </button>
+
+    <aside class="music-player hidden" id="music-player" aria-label="Music player">
+      <div class="music-player__top">
+        <div>
+          <p class="music-player__eyebrow">Now Playing</p>
+          <h3>Dancing Queen</h3>
+          <p>ABBA</p>
+        </div>
+        <button
+          class="icon-button"
+          id="music-close"
+          type="button"
+          aria-label="Close music controls"
+        >
+          ×
+        </button>
+      </div>
+      <div class="music-player__controls">
+        <button class="primary-button" id="play-pause" type="button">Pause</button>
+        <a
+          class="ghost-button"
+          id="music-link"
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open Track
+        </a>
+      </div>
+      <label class="volume-wrap" for="volume-range">
+        <span>Volume</span>
+        <input id="volume-range" type="range" min="0" max="100" value="35" />
+      </label>
+    </aside>
+
+    <div id="youtube-shell" aria-hidden="true"></div>
+
+    <main class="site-shell hidden" id="site-shell">
+      <section class="hero section" id="hero">
+        <div class="hero__veil"></div>
+        <div class="hero__sparkles" id="hero-sparkles"></div>
+        <div class="hero__content">
+          <p class="eyebrow" id="hero-eyebrow">You're Invited to Nour's 17th Birthday</p>
+          <h1 class="title-script" id="hero-title">Dancing Queen</h1>
+          <p class="hero__quote" id="hero-quote">Young and Sweet, Only 17</p>
+          <p class="hero__wish" id="hero-wish">You're invited to celebrate with Nour ✨</p>
+        </div>
+      </section>
+
+      <section class="section countdown-section" id="countdown-section">
+        <div class="section-heading">
+          <p class="eyebrow">The Celebration Begins Soon</p>
+          <h2>Countdown to Saturday, May 30, 2026 at 6:00 PM</h2>
+        </div>
+        <div class="countdown-grid" id="countdown-grid">
+          <article class="countdown-card">
+            <span class="countdown-value" id="hours">00</span>
+            <span class="countdown-label">Hours</span>
+          </article>
+          <article class="countdown-card">
+            <span class="countdown-value" id="minutes">00</span>
+            <span class="countdown-label">Minutes</span>
+          </article>
+          <article class="countdown-card">
+            <span class="countdown-value" id="seconds">00</span>
+            <span class="countdown-label">Seconds</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section photo-section" id="photo-section">
+        <div class="section-heading">
+          <h2>Nour in the Spotlight</h2>
+        </div>
+        <div class="portrait-frame">
+          <img id="portrait-image" src="./placeholder-portrait.svg" alt="Portrait placeholder for Nour" />
+        </div>
+      </section>
+
+      <section class="section" id="dress-code-section">
+        <div class="section-heading">
+          <p class="eyebrow">Style Notes</p>
+          <h2>Dress Code</h2>
+        </div>
+        <article class="glass-card dress-code-card">
+          <p>
+            Wear whatever makes you feel amazing. If you'd like to match the
+            celebration vibe, teal blue, silver, and subtle glitter accents
+            would fit beautifully.
+          </p>
+          <div class="swatches">
+            <span style="--swatch:#081b2e"></span>
+            <span style="--swatch:#3aa7b3"></span>
+            <span style="--swatch:#6fd5df"></span>
+            <span style="--swatch:#d8dde4"></span>
+            <span style="--swatch:#ffffff"></span>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="details">
+        <div class="section-heading">
+          <p class="eyebrow">Invitation Details</p>
+          <h2>An Evening Designed for Celebration</h2>
+        </div>
+        <div class="details-grid" id="details-grid"></div>
+      </section>
+
+      <section class="section" id="location-section">
+        <div class="section-heading">
+          <p class="eyebrow">Destination</p>
+          <h2>Meet Us at LOKALI</h2>
+        </div>
+        <div class="location-grid">
+          <article class="glass-card location-copy">
+            <p class="location-name">LOKALI</p>
+            <p>
+              Join Nour for a beautiful evening filled with music, sparkle,
+              and unforgettable birthday memories.
+            </p>
+            <div class="location-actions">
+              <a class="primary-button" id="open-maps" href="#" target="_blank" rel="noreferrer">Open Maps</a>
+              <a class="ghost-button" id="navigate-link" href="#" target="_blank" rel="noreferrer">Navigate</a>
+            </div>
+          </article>
+          <article class="glass-card map-card">
+            <iframe
+              id="map-frame"
+              title="Map location for LOKALI"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="wishes-section">
+        <div class="section-heading">
+          <p class="eyebrow">Messages for Nour</p>
+          <h2>Birthday Wishes Wall</h2>
+        </div>
+        <div class="wishes-layout">
+          <form class="glass-card wish-form" id="wish-form" novalidate>
+            <label>
+              <span>Name</span>
+              <input id="wish-name" name="name" type="text" maxlength="32" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Wish</span>
+              <textarea
+                id="wish-message"
+                name="message"
+                rows="4"
+                maxlength="180"
+                placeholder="Write a beautiful wish for Nour..."
+                required
+              ></textarea>
+            </label>
+            <p class="form-error" id="wish-error" role="alert"></p>
+            <button class="primary-button" type="submit">Post Wish</button>
+          </form>
+          <div class="wishes-feed" id="wishes-feed"></div>
+        </div>
+      </section>
+
+      <section class="section" id="surprise-section">
+        <div class="section-heading">
+          <p class="eyebrow">A Hidden Moment</p>
+          <h2>One More Surprise</h2>
+        </div>
+        <div class="surprise-wrap">
+          <button class="primary-button secret-button" id="secret-button" type="button">
+            ✨ Birthday Secret
+          </button>
+        </div>
+      </section>
+
+      <section class="section cake-section" id="cake-section">
+        <div class="section-heading">
+          <p class="eyebrow">Celebrate the Moment</p>
+          <h2>The Final Cake Reveal</h2>
+        </div>
+        <div class="cake-stage" id="cake-stage" role="button" tabindex="0" aria-label="Celebrate with the birthday cake">
+          <div class="cake-sparkles"></div>
+          <div class="cake-candle cake-candle--left">
+            <span class="cake-flame"></span>
+          </div>
+          <div class="cake-candle cake-candle--center">
+            <span class="cake-flame"></span>
+          </div>
+          <div class="cake-candle cake-candle--right">
+            <span class="cake-flame"></span>
+          </div>
+          <div class="cake-top">
+            <span>Dancing Queen</span>
+            <span>Young and Sweet</span>
+            <span>Only 17</span>
+          </div>
+          <div class="cake-middle"></div>
+          <div class="cake-base"></div>
+          <div class="cake-plate"></div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p id="footer-copy">Dancing Queen • Nour • 17</p>
+      </footer>
+    </main>
+
+    <div class="secret-overlay hidden" id="secret-overlay" aria-hidden="true">
+      <div class="secret-backdrop"></div>
+      <div class="secret-sequence">
+        <span class="secret-line active">Dancing Queen</span>
+        <span class="secret-line">Young and Sweet</span>
+        <span class="secret-line">Only 17</span>
+        <span class="secret-line">Celebrate with Nour</span>
+      </div>
+      <button class="icon-button secret-close" id="secret-close" type="button" aria-label="Close secret reveal">
+        ×
+      </button>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" rx="48" fill="url(#bg)"/>
+  <rect x="34" y="34" width="832" height="1132" rx="36" stroke="url(#frame)" stroke-width="4"/>
+  <circle cx="450" cy="390" r="134" fill="url(#portraitGlow)" fill-opacity="0.95"/>
+  <path d="M322 814C322 708.514 407.514 623 513 623H387C492.486 623 578 708.514 578 814V838H322V814Z" fill="url(#dress)"/>
+  <path d="M353 414C353 340.546 412.546 281 486 281H414C487.454 281 547 340.546 547 414V460C547 533.454 487.454 593 414 593H486C412.546 593 353 533.454 353 460V414Z" fill="url(#skin)"/>
+  <path d="M310 381C310 268.886 400.886 178 513 178H402C514.114 178 605 268.886 605 381V410C605 302.305 517.695 215 410 215C302.305 215 215 302.305 215 410V381C215 268.886 305.886 178 418 178H513C400.886 178 310 268.886 310 381Z" fill="#0E1E31"/>
+  <path d="M273 870C299.725 758.62 399.578 680 514.117 680H385.883C500.422 680 600.275 758.62 627 870L653 979H247L273 870Z" fill="url(#dress2)"/>
+  <text x="50%" y="1032" text-anchor="middle" fill="#D8DDE4" font-size="44" font-family="Georgia, serif" letter-spacing="8">
+    REPLACE WITH NOUR'S PHOTO
+  </text>
+  <defs>
+    <linearGradient id="bg" x1="64" y1="90" x2="830" y2="1106" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#132640"/>
+      <stop offset="0.46" stop-color="#0A1420"/>
+      <stop offset="1" stop-color="#091421"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="102" y1="98" x2="814" y2="1088" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2F5F8"/>
+      <stop offset="0.52" stop-color="#83D6DF"/>
+      <stop offset="1" stop-color="#D8DDE4"/>
+    </linearGradient>
+    <radialGradient id="portraitGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(452 392) rotate(90) scale(180)">
+      <stop stop-color="#A9F0F6"/>
+      <stop offset="1" stop-color="#2B6D86"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="353" y1="281" x2="547" y2="593" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFE7E1"/>
+      <stop offset="1" stop-color="#C8BCB6"/>
+    </linearGradient>
+    <linearGradient id="dress" x1="322" y1="623" x2="578" y2="838" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#79E2E9"/>
+      <stop offset="1" stop-color="#2E7B92"/>
+    </linearGradient>
+    <linearGradient id="dress2" x1="247" y1="680" x2="653" y2="979" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C7F90"/>
+      <stop offset="1" stop-color="#D8DDE4"/>
+    </linearGradient>
+  </defs>
+</svg>
