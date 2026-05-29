@@ -50,7 +50,7 @@ const CONFIG = {
     cake: { show: true },
   },
   photo: {
-    show: true,
+    show: false,
     src: "./birthday-girl-teal.png",
     alt: "Elegant teal birthday portrait",
   },
